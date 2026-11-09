@@ -29,9 +29,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component    = 'availability_workshopattendance';
-$plugin->version      = 2026072400;
+$plugin->version      = 2026110902;
 $plugin->requires     = 2022041900; // Moodle 4.0+
 $plugin->supported    = [400, 500];
 $plugin->maturity     = MATURITY_STABLE;
-$plugin->release      = '1.0.1';
-$plugin->dependencies = ['local_workshops' => 2026062200029];
+$plugin->release      = '1.0.4'; // v1.0.4: Restrict access editor support (classes/frontend.php + YUI form module; the AMD form was never loaded by Moodle core) and full README. // v1.0.3: v1.0.3: Packaging — ZIP root is now workshopattendance (matches availability/condition/workshopattendance); CHANGELOG.md added. // v1.0.2: v1.0.2: FIX dependency — local_workshops version was 13 digits (2026062200029), larger than any real local_workshops version (YYYYMMDDXX = 10 digits), so Moodle reported it as missing.
+$plugin->dependencies = ['local_workshops' => 2026072400]; // local_workshops v1.0.32 or later.

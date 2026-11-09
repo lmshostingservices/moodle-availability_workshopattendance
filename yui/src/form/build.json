@@ -1,0 +1,10 @@
+{
+  "name": "moodle-availability_workshopattendance-form",
+  "builds": {
+    "moodle-availability_workshopattendance-form": {
+      "jsfiles": [
+        "form.js"
+      ]
+    }
+  }
+}

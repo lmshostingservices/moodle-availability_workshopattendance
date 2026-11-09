@@ -31,18 +31,23 @@ $string['description']          = 'Allow access based on a student\'s booking st
 // Condition form labels.
 $string['label_workshop']       = 'Workshop';
 $string['label_status']         = 'Booking status';
-$string['label_requires']       = 'requires status';
-$string['selectworkshop']       = '— Select workshop —';
-$string['loadingworkshops']     = 'Loading workshops…';
-$string['noworkshops']          = 'No workshops found';
-$string['errorloading']         = 'Error loading workshops';
+$string['linkedworkshops']      = 'Workshops linked to this course';
+$string['otherworkshops']       = 'Other workshops';
+
+// Booking statuses (labels for the stored Workshop Scheduler values).
+$string['status_booked']        = 'Booked';
+$string['status_confirmed']     = 'Confirmed';
+$string['status_waitlisted']    = 'Waitlisted';
+$string['status_attended']      = 'Attended';
+$string['status_cancelled']     = 'Cancelled';
+$string['status_noshow']        = 'No Show';
 
 // Condition descriptions shown to students / teachers.
 $string['requires_attended']    = 'You must have a booking status of <strong>{$a->status}</strong> in the workshop <strong>{$a->workshop}</strong>.';
 $string['requires_notattended'] = 'You must NOT have a booking status of <strong>{$a->status}</strong> in the workshop <strong>{$a->workshop}</strong>.';
 
 // Error strings.
-$string['missingworkshopid']    = 'No workshop selected for this availability condition.';
+$string['missingworkshopid']    = 'Select a workshop for the Workshop attendance condition.';
 $string['unknownworkshop']      = '(Unknown workshop)';
 
 // Privacy.
